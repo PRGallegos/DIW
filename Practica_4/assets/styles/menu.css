@@ -1,0 +1,159 @@
+/* ----------------------------------------------------------------------------- TITLES ---- */
+h2,
+h3,
+h4 {
+    color: #ffd700;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* ----------------------------------------------------------------------------- MENU SECTION ---- */
+.menu {
+    padding: 20px 40px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.menu-category-1,
+.menu-category-2 {
+    margin-bottom: 40px;
+    height: 100vh;
+    border-bottom: 1px solid #ffd700;
+}
+
+.menu-category-1 h3,
+.menu-category-2 h3 {
+    border-bottom: 2px solid #ffd700;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #222;
+    border: 1px solid #ffd700;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 300px;
+    max-width: 350px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ffd700;
+}
+
+.menu-item p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0 10px 10px;
+    text-align: left;
+    color: white;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.menu-item.item-1::before {
+    background-image: url('../img/dishes/Omakase\ Nigiri\ Platter.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-item.item-2::before {
+    background-image: url('../img/dishes/Golden\ Wagyu\ Tartare.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-item.item-3::before {
+    background-image: url('../img/dishes/Miso\ Black\ Cod.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-item.item-4::before {
+    background-image: url('../img/dishes/Foie\ Gras\ Sushi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-item.item-5::before {
+    background-image: url('../img/dishes/harmony.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-item.item-6::before {
+    background-image: url('../img/dishes/zen.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.3s;
+}
+
+/* ----------------------------------------------------------------------------- FOOTER ---- */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    border-top: 1px solid #ffd700;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* ----------------------------------------------------------------------------- MEDIA QUERIES ---- */
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .menu {
+        padding: 20px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/******************************************************************************* GENERAL ***/
+section {
+    height: 100vh;
+    padding: 20px;
+}
+
+h1,
+h4 {
+    font-family: 'Righteous', cursive;
+}
+
+.container {
+    width: 100%;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/******************************************************************************* NAV ***/
+nav {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav .logo {
+    margin-left: 20px;
+    width: 150px;
+    height: 50px;
+    background-image: url('../img/sum41_logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px 0;
+}
+
+/******************************************************************************* HERO ***/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/concert2.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.hero .legend {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero .little {
+    font-size: 1.2em;
+}
+
+.hero .great {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+
+/******************************************************************************* ABOUT ***/
+.about {
+    background-image: url('../img/banda3.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.about-header,
+.about-content,
+.about-awards {
+    position: relative;
+    z-index: 2;
+}
+
+.about-header h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.separator {
+    height: 2px;
+    background: #fff;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.about-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.about-awards {
+    margin-top: 40px;
+}
+
+.about-awards h3,
+.about-awards h4 {
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.about-awards p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+    margin: 10px auto;
+    width: 80%;
+}
+
+/******************************************************************************* MEMBERS ***/
+.container-members {
+    background-image: url('../img/banda2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.container-members::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.container-members h2,
+.members-flex {
+    position: relative;
+    z-index: 2;
+}
+
+.container-members h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.members-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member {
+    flex: 1 1 45%;
+    margin: 20px;
+    text-align: center;
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+}
+
+.member h4 {
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.member:nth-child(1) .member-photo {
+    background-image: url('../img/1x/Member1.png');
+}
+
+.member:nth-child(2) .member-photo {
+    background-image: url('../img/1x/Member2.png');
+}
+
+.member:nth-child(3) .member-photo {
+    background-image: url('../img/1x/Member3.png');
+}
+
+.member:nth-child(4) .member-photo {
+    background-image: url('../img/1x/Member4.png');
+}
+
+/******************************************************************************* TOURS ***/
+.tours {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+    height: 100vh;
+}
+
+.container-tours {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tours-header h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.tour-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tour-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1 1 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.tour-card:hover {
+    transform: scale(1.05);
+}
+
+.tour-info h3 {
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.tour-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #666;
+}
+
+/******************************************************************************* ALBUM ***/
+.works {
+    background-image: url('../img/last_album.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.works::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.works-header,
+.works-body {
+    position: relative;
+    z-index: 2;
+}
+
+.works-header h4,
+.works-header h1 {
+    font-family: 'Righteous', cursive;
+    color: #fff;
+}
+
+.works-header h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.works-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.works-body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.works-body .workizda,
+.works-body .workdcha {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/******************************************************************************* CONTACT ***/
+.contact {
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-header {
+    width: 100%;
+    flex: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-body {
+    flex: 5;
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.line * {
+    flex: 1;
+}
+
+.line span:nth-child(2) {
+    text-align: center;
+}
+
+.line span:nth-child(3) {
+    text-align: center;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+input[type=text] {
+    border: 0;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid black;
+    resize: none;
+}
+
+input[type=submit] {
+    border: 0;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+/******************************************************************************* FOOTER ***/
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .logofooter {
+    background-image: url(../img/sum41_logo4.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+/******************************************************************************* MEDIA QUERIES ***/
+@media (max-width: 768px) {
+
+    /* Navbar */
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Hero */
+    .hero {
+        padding-left: 20px;
+    }
+
+    .hero .great {
+        font-size: 2em;
+    }
+
+    /* About */
+    .about-content p,
+    .about-awards p {
+        width: 90%;
+    }
+
+    /* Members */
+    .member {
+        flex: 1 1 100%;
+    }
+
+    /* Tours */
+    .tour-card {
+        flex: 1 1 100%;
+    }
+
+    /* Contact */
+    .contact-body {
+        width: 90%;
+    }
+
+    .line {
+        flex-direction: column;
+    }
+
+    .line span {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Hero */
+    .hero .great {
+        font-size: 1.5em;
+    }
+
+    .hero .little {
+        font-size: 1em;
+    }
+
+    /* About */
+    .about-header h2 {
+        font-size: 2em;
+    }
+
+    /* Members */
+    .member-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Tours */
+    .tours-header h2 {
+        font-size: 2em;
+    }
+
+    /* Works */
+    .works-body .workizda,
+    .works-body .workdcha {
+        font-size: 1em;
+    }
+}

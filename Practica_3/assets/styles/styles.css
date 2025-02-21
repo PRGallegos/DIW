@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+@font-face {
+    font-family: "NouvellRegular";
+    src: url(../fonts/NouvelRRegular.ttf);
+}
+
+@font-face {
+    font-family: "NouvellBold";
+    src: url(../fonts/NouvelRBold.ttf);
+}
+
+/******************************************************************************* GENERAL STYLES ***/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    line-height: inherit;
+    background-color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: black;
+    border-bottom: 1px solid #e10600;
+}
+
+/******************************************************************************* HEADER ***/
+header {
+    background-color: #e10600;
+    padding: .5rem;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.header-logo {
+    height: 40px;
+    width: 100px;
+
+    background-image: url('../img/f1-logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.header-logo-link {
+    display: inline-block;
+}
+
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /*Burger Menu*/
+    transition: transform 0.3s ease;
+}
+
+.header-nav ul li {
+    display: inline;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+    color: #000000;
+}
+
+.header-nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+    color: #000000;
+}
+
+.header-nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
+/******************************************************************************* HERO ***/
+.hero {
+    height: 100vh;
+    max-height: 100vh;
+
+    background-image: url('../img/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.hero-content {
+    padding: 5rem;
+    color: black;
+}
+
+.hero h2 {
+    font-family: "NouvellBold";
+    font-size: 7rem;
+    margin: 0;
+    color: black;
+}
+
+.hero p {
+    font-family: "NouvellRegular";
+    font-size: 2rem;
+    color: black;
+    max-width: 80ch;
+}
+
+/******************************************************************************* SPEED ***/
+.speed {
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.speed-content {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    color: white;
+}
+
+.speed h2 {
+    font-family: "NouvellBold";
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.speed p {
+    width: 100%;
+
+    font-family: "NouvellRegular";
+    font-size: 1.2rem;
+    max-width: 80ch;
+}
+
+.speed-img {
+    width: 50%;
+    height: 100%;
+
+    background-image: url('../img/speed2.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/******************************************************************************* TECHNOLOGY ***/
+.technology {
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.technology-content {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    color: white;
+
+}
+
+.technology h2 {
+    font-family: "NouvellBold";
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+
+.technology p {
+    font-family: "NouvellRegular";
+    font-size: 1.2rem;
+    max-width: 80ch;
+
+}
+
+.technology-img {
+    width: 50%;
+    height: 100%;
+
+    background-image: url('../img/technology.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/******************************************************************************* CIRCUITS ***/
+.circuits {
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.circuits-content {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+    color: white;
+
+}
+
+.circuits h2 {
+    font-family: "NouvellBold";
+    font-size: 4rem;
+    margin: 0;
+
+}
+
+.circuits p {
+    font-family: "NouvellRegular";
+    font-size: 1.2rem;
+    max-width: 80ch;
+}
+
+.circuits-img {
+    width: 50%;
+    height: 100%;
+
+    background-image: url('../img/circuits.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/******************************************************************************* SUSTAIN ***/
+.sustain {
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.sustain-content {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 5rem;
+    color: white;
+}
+
+.sustain h2 {
+    font-family: "NouvellBold";
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.sustain p {
+    font-family: "NouvellRegular";
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d4d4d4;
+    max-width: 80ch;
+}
+
+.sustain-img {
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/sustain2.jpeg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/******************************************************************************* FANS ***/
+.fans {
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fans-content {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 5rem;
+    color: white;
+}
+
+.fans h2 {
+    font-family: "NouvellBold";
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.fans p {
+    font-family: "NouvellRegular";
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d4d4d4;
+    max-width: 80ch;
+}
+
+.fans-img {
+    width: 50%;
+    height: 100%;
+    background-image: url('../img/fans.jpeg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+/******************************************************************************* CONTACT ***/
+.contact {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #1d1d1d;
+}
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.contact-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-body {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.line {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.line span:nth-child(2),
+.line span:nth-child(3) {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    text-align: center;
+    gap: 1rem;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: white;
+    padding: .5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=submit] {
+    border: 0;
+    background: #e10600;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+/******************************************************************************* FOOTER ***/
+
+.footer {
+    background-color: #191919;
+    color: #FFFFFF;
+    padding: 40px;
+    font-family: "NouvellRegular";
+    font-size: 14px;
+}
+
+.footer-partners {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-partners h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.partner-logos img {
+    max-width: 100px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 20px 0;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin: 10px;
+    min-width: 150px;
+
+    border-right: 1px solid #333;
+}
+
+.footer-column h4 {
+    color: #A0A0A0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 8px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #FF0000;
+}
+
+.footer-column .socials {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer-column .socials li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer-column .socials li img {
+    width: 20px;
+}
+
+
+/************************************************************ FOOTER-BOTTOM ***/
+.footer-bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    text-align: right;
+    padding: 20px;
+    border-top: 1px solid #333;
+    color: white;
+}
+
+.footer-links-bottom-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.footer-links-bottom {
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links-bottom a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footer-links-bottom a:hover {
+    color: #FF0000;
+}
+
+.footer-logo-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo-link {
+    display: inline-block;
+}
+
+.footer-logo {
+    height: 40px;
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../img/f1-logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-logo-link {
+    display: inline-block;
+}
+
+
+/******************************************************************************* SUBFOOTER ***/
+.subfooter {
+    width: 100%;
+    height: auto;
+    background-color: #1d1d1d;
+    padding: 1rem;
+    text-align: center;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/******************************************************************************* MEDIAQUERIES ***/
+@media (max-width: 768px) {
+
+    .header-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #e10600;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 1.5rem;
+        height: 0.2rem;
+        background-color: #FFFFFF;
+        margin: 0.3rem 0;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .header-nav.active {
+        max-height: 200px;
+    }
+
+    .contact-body {
+        width: 100%;
+    }
+
+    .team {
+        width: 45%;
+    }
+
+    section {
+        flex-direction: column;
+        padding: 20px;
+        gap: 1rem;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .speed,
+    .technology,
+    .circuits,
+    .sustain,
+    .fans {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .speed-content,
+    .technology-content,
+    .circuits-content,
+    .sustain-content,
+    .fans-content,
+    .speed-img,
+    .technology-img,
+    .circuits-img,
+    .sustain-img,
+    .fans-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .team {
+        width: 100%;
+    }
+
+    .line {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+
+    .footer-column {
+        min-width: 100px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}

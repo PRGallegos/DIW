@@ -1,0 +1,58 @@
+:root {
+    --ocean-blue: #00274D;
+    --scarlet-red: #BF0A30;
+    --light-gold: #FFC857;
+    --pure-white: #FFFFFF;
+    --navi-blue: #27395F;
+    --angulo: -300deg;
+}
+
+@property --angulo {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: -300deg;
+}
+
+footer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4rem;
+    background: linear-gradient(var(--angulo), var(--pure-white), var(--ocean-blue));
+}
+
+.footer-container {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+    p {
+        font-size: 1.2rem;
+        color: black;
+        text-align: center;
+    }
+}
+
+.footer-links {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    li a {
+        text-decoration: none;
+        color: var(--pure-white);
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        transition: color 0.3s ease-in-out;
+    }
+
+    li a:hover {
+        color: var(--light-gold);
+    }
+}

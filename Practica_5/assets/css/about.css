@@ -1,0 +1,94 @@
+/******************************************************************************* NAV BAR ***/
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-bar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-bar .menu-items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar .menu-items li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-bar .menu-items li a:hover {
+    color: #f5a623;
+}
+
+/******************************************************************************* MINI HERO ***/
+.mini-hero {
+    margin-top: 70px;
+    text-align: center;
+    padding: 50px 20px;
+    background: url('assets/img/about-hero.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+.mini-hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/******************************************************************************* SECTION STYLES ***/
+.section-title {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.content,
+.member {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member {
+    text-align: center;
+}
+
+.member img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member h4 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.member p {
+    font-size: 1rem;
+    color: #666;
+}

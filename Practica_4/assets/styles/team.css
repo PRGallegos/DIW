@@ -1,0 +1,107 @@
+.team {
+    padding: 2rem 5%;
+    text-align: center;
+    color: #fff;
+    background-image: url(../img/cherry-wood.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+    letter-spacing: 0.05rem;
+}
+
+/******************************************************************************* CHEF & SUB-CHEF ***/
+.team-member {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.team-member .profile-pic {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 6px rgba(255, 215, 0, 0.5);
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.team-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.team-social-links a {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ffd700;
+    text-decoration: none;
+    border-radius: 25px;
+    color: #ffd700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.team-social-links a:hover {
+    background-color: #ffd700;
+    color: #000;
+}
+
+/******************************************************************************* KITCHEN ***/
+.kitchen-team {
+    margin-top: 3rem;
+}
+
+.kitchen-team h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.team-gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.team-gallery p {
+    max-width: 70ch;
+}
+
+.team-gallery .team-member {
+    text-align: center;
+}
+
+.team-gallery .profile-pic {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ffd700;
+}
+
+
+@media (max-width: 1200px) {
+    .team-gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

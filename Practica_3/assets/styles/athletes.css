@@ -1,0 +1,289 @@
+/******************************************************************************* INTRO ***/
+.drivers-intro {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-image: url('../img/drivers.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro-content {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.8rem;
+}
+
+.drivers-intro h1 {
+    font-family: "NouvellBold";
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #e10600;
+    margin-bottom: 1rem;
+}
+
+.drivers-intro p {
+    font-family: 'Roboto';
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+    color: black;
+}
+
+/******************************************************************************* DRIVERS SECTION ***/
+.drivers {
+    font-family: 'Roboto';
+}
+
+.driver-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.driver-content {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+    background-color: #1d1d1d;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.driver-photo {
+    flex: 1;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+}
+
+.driver-info {
+    flex: 1;
+    text-align: left;
+}
+
+.driver-info h2 {
+    font-family: "NouvellBold";
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    color: #e10600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.driver-info p {
+    font-family: "NouvellRegular";
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+    color: #d4d4d4;
+}
+
+/******************************************************************************* DRIVER-PHOTO ***/
+.driver-photo {
+    width: 50%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+}
+
+.fernando-alonso .driver-photo {
+    background-image: url('../img/drivers/fernando-alonso.jpg');
+}
+
+.max-verstappen .driver-photo {
+    background-image: url('../img/drivers/max-verstappen.jpg');
+}
+
+.lewis-hamilton .driver-photo {
+    background-image: url('../img/drivers/lewis-hamilton.jpg');
+}
+
+.charles-leclerc .driver-photo {
+    background-image: url('../img/drivers/charles-leclerc.jpg');
+}
+
+.sergio-perez .driver-photo {
+    background-image: url('../img/drivers/sergio-perez.jpg');
+}
+
+.carlos-sainz .driver-photo {
+    background-image: url('../img/drivers/carlos-sainz.jpg');
+}
+
+.george-russell .driver-photo {
+    background-image: url('../img/drivers/george-russell.jpg');
+}
+
+.esteban-ocon .driver-photo {
+    background-image: url('../img/drivers/esteban-ocon.jpg');
+}
+
+.valtteri-bottas .driver-photo {
+    background-image: url('../img/drivers/valtteri-bottas.jpg');
+}
+
+.lando-norris .driver-photo {
+    background-image: url('../img/drivers/lando-norris.jpg');
+}
+
+.pierre-gasly .driver-photo {
+    background-image: url('../img/drivers/pierre-gasly.jpg');
+}
+
+.yuki-tsunoda .driver-photo {
+    background-image: url('../img/drivers/yuki-tsunoda.jpg');
+}
+
+.kevin-magnussen .driver-photo {
+    background-image: url('../img/drivers/kevin-magnussen.jpg');
+}
+
+.nico-hulkenberg .driver-photo {
+    background-image: url('../img/drivers/nico-hulkenberg.jpg');
+}
+
+.alexander-albon .driver-photo {
+    background-image: url('../img/drivers/alex-albon.jpg');
+}
+
+
+/******************************************************************************* CHAMPIONS ***/
+.world-champions {
+    padding: 4rem 2rem;
+    background-color: #111;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.world-champions h2 {
+    font-family: "NouvellBold";
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #FFD700;
+    margin-bottom: 2rem;
+}
+
+.champion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.champion-item {
+    flex: 1 1 18.75rem;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    background-color: #1d1d1d;
+    overflow: hidden;
+    max-width: 320px;
+}
+
+.champion-photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-size: cover;
+    background-position: center;
+}
+
+.champion-info {
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.champion-info h3 {
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    color: #FFD700;
+    margin-bottom: 0.5rem;
+}
+
+.champion-info p {
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+    color: #d4d4d4;
+    margin: 0.5rem 0;
+}
+
+/******************************************************************************* CHAMPIONS ***/
+.fernando-alonso .champion-photo {
+    background-image: url('../img/Drivers/Champions/fernando-alonso.jpg');
+}
+
+.lewis-hamilton .champion-photo {
+    background-image: url('../img/Drivers/Champions/lewis-hamilton.jpg');
+}
+
+.michael-schumacher .champion-photo {
+    background-image: url('../img/Drivers/Champions/michael-schumacher.jpg');
+}
+
+.ayrton-senna .champion-photo {
+    background-image: url('../img/Drivers/Champions/ayrton-senna.jpg');
+}
+
+.max-verstappen .champion-photo {
+    background-image: url('../img/Drivers/Champions/max-verstappen.jpg');
+}
+
+.jenson-button .champion-photo {
+    background-image: url('../img/Drivers/Champions/jenson-button.jpg');
+}
+
+/******************************************************************************* MEDIA QUERIES ***/
+@media (max-width: 768px) {
+    .driver-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .driver-photo {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .driver-info {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .champion-list {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .world-champions h2 {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    .champion-info h3 {
+        font-size: clamp(1rem, 3vw, 1.2rem);
+    }
+
+    .champion-info p {
+        font-size: clamp(0.8rem, 2vw, 0.9rem);
+    }
+
+    .champion-item {
+        width: 100%;
+    }
+}

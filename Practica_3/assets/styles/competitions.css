@@ -1,0 +1,533 @@
+/******************************************************************************* SECCIONES DE CIRCUITOS ***/
+section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem;
+    background-color: black;
+    border-bottom: 1px solid #e10600;
+}
+
+section h2 {
+    font-family: "NouvellBold";
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+section p {
+    font-family: "NouvellRegular";
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d4d4d4;
+    max-width: 80ch;
+}
+
+section .explanation {
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+section .explanation h2 {
+    margin-bottom: 1rem;
+}
+
+section .explanation p {
+    color: #ccc;
+}
+
+section .race {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 4rem;
+}
+
+/******************************************************************************* CONTENIDO DE SECCIONES ***/
+section .bahrain-content,
+section .saudi-arabia-content,
+section .australia-content,
+section .japan-content,
+section .china-content,
+section .miami-content,
+section .imola-content,
+section .monaco-content,
+section .spain-content,
+section .canada-content,
+section .austria-content,
+section .great-britain-content,
+section .belgium-content,
+section .netherlands-content,
+section .italy-content,
+section .singapore-content,
+section .usa-content,
+section .mexico-content,
+section .brazil-content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2%;
+    padding: 1rem;
+    width: 100%;
+    max-width: 100vh;
+}
+
+/******************************************************************************* LAYOUT CONTENT ***/
+.bahrain-layout,
+.saudi-arabia-layout,
+.australia-layout,
+.japan-layout,
+.china-layout,
+.miami-layout,
+.imola-layout,
+.monaco-layout,
+.spain-layout,
+.canada-layout,
+.austria-layout,
+.great-britain-layout,
+.belgium-layout,
+.netherlands-layout,
+.italy-layout,
+.singapore-layout,
+.usa-layout,
+.mexico-layout,
+.brazil-layout {
+    width: 100%;
+    height: 40rem;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+}
+
+/******************************************************************************* COMPOUNDS CONTENT ***/
+.bahrain-compounds,
+.saudi-arabia-compounds,
+.australia-compounds,
+.japan-compounds,
+.china-compounds,
+.miami-compounds,
+.imola-compounds,
+.monaco-compounds,
+.spain-compounds,
+.canada-compounds,
+.austria-compounds,
+.great-britain-compounds,
+.belgium-compounds,
+.netherlands-compounds,
+.italy-compounds,
+.singapore-compounds,
+.usa-compounds,
+.mexico-compounds,
+.brazil-compounds {
+    width: 100%;
+    height: 40rem;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+}
+
+/******************************************************************************* STINTS CONTENT ***/
+.bahrain-stints,
+.saudi-arabia-stints,
+.australia-stints,
+.japan-stints,
+.china-stints,
+.miami-stints,
+.imola-stints,
+.monaco-stints,
+.spain-stints,
+.canada-stints,
+.austria-stints,
+.great-britain-stints,
+.belgium-stints,
+.netherlands-stints,
+.italy-stints,
+.singapore-stints,
+.usa-stints,
+.mexico-stints,
+.brazil-stints {
+    width: 100%;
+    height: 40rem;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.5rem;
+}
+
+
+/******************************************************************************* LAYOUT IMAGES ***/
+.bahrain-layout {
+    background-image: url('../img/Competitions/01-Bahrain/bahrain-layout.jpg');
+}
+
+.saudi-arabia-layout {
+    background-image: url('../img/Competitions/02-Saudi-Arabia/saudi-layout.jpg');
+}
+
+.australia-layout {
+    background-image: url('../img/Competitions/03-Australia/australia-layout.jpg');
+}
+
+.japan-layout {
+    background-image: url('../img/Competitions/04-Japon/japan-layout.jpg');
+}
+
+.china-layout {
+    background-image: url('../img/Competitions/05-China/china-layout.jpg');
+}
+
+.miami-layout {
+    background-image: url('../img/Competitions/06-Miami/miami-layout.jpg');
+}
+
+.imola-layout {
+    background-image: url('../img/Competitions/07-Imola/imola-layout.jpg');
+}
+
+.monaco-layout {
+    background-image: url('../img/Competitions/08-Monaco/monaco-layout.jpg');
+}
+
+.canada-layout {
+    background-image: url('../img/Competitions/09-Canada/canada-layout.jpg');
+}
+
+.spain-layout {
+    background-image: url('../img/Competitions/10-Spain/spain-layout.jpg');
+}
+
+.austria-layout {
+    background-image: url('../img/Competitions/11-Austria/austria-layout.jpg');
+}
+
+.great-britain-layout {
+    background-image: url('../img/Competitions/12-UK/uk-layout.jpg');
+}
+
+.hungary-layout {
+    background-image: url('../img/Competitions/13-Hungary/hungary-layout.jpg');
+}
+
+.belgium-layout {
+    background-image: url('../img/Competitions/14-Belgium/belgium-layout.jpg');
+}
+
+.netherlands-layout {
+    background-image: url('../img/Competitions/15-Deutchland/dutch-layout.jpg');
+}
+
+.italy-layout {
+    background-image: url('../img/Competitions/16-Italia/italia-layout.jpg');
+}
+
+.azerbaijan-layout {
+    background-image: url('../img/Competitions/17-Azerbaijan/baku-layout.jpg');
+}
+
+.singapore-layout {
+    background-image: url('../img/Competitions/18-Singapore/singapore-layout.jpg');
+}
+
+.usa-layout {
+    background-image: url('../img/Competitions/19-USA/usa-layout.jpg');
+}
+
+.mexico-layout {
+    background-image: url('../img/Competitions/20-Mexico/mexico-layout.jpg');
+}
+
+.brazil-layout {
+    background-image: url('../img/Competitions/21-Brasil/brasil-layout.jpg');
+}
+
+
+/******************************************************************************* COMPOUNDS IMAGES ***/
+.bahrain-compounds {
+    background-image: url('../img/Competitions/01-Bahrain/bahrain-compounds.jpg');
+}
+
+.saudi-arabia-compounds {
+    background-image: url('../img/Competitions/02-Saudi-Arabia/saudi-compounds.jpg');
+}
+
+.australia-compounds {
+    background-image: url('../img/Competitions/03-Australia/australia-compounds.jpg');
+}
+
+.japan-compounds {
+    background-image: url('../img/Competitions/04-Japon/japan-compounds.jpg');
+}
+
+.china-compounds {
+    background-image: url('../img/Competitions/05-China/china-compounds.jpg');
+}
+
+.miami-compounds {
+    background-image: url('../img/Competitions/06-Miami/miami-compounds.jpg');
+}
+
+.imola-compounds {
+    background-image: url('../img/Competitions/07-Imola/imola-compounds.jpg');
+}
+
+.monaco-compounds {
+    background-image: url('../img/Competitions/08-Monaco/monaco-compounds.jpg');
+}
+
+.canada-compounds {
+    background-image: url('../img/Competitions/09-Canada/canada-compounds.jpg');
+}
+
+.spain-compounds {
+    background-image: url('../img/Competitions/10-Spain/spain-compounds.jpg');
+}
+
+.austria-compounds {
+    background-image: url('../img/Competitions/11-Austria/austria-compounds.jpg');
+}
+
+.great-britain-compounds {
+    background-image: url('../img/Competitions/12-UK/uk-compounds.jpg');
+}
+
+.hungary-compounds {
+    background-image: url('../img/Competitions/13-Hungary/hungary-compounds.jpg');
+}
+
+.belgium-compounds {
+    background-image: url('../img/Competitions/14-Belgium/belgium-compounds.jpg');
+}
+
+.netherlands-compounds {
+    background-image: url('../img/Competitions/15-Deutchland/dutch-compounds.jpg');
+}
+
+.italy-compounds {
+    background-image: url('../img/Competitions/16-Italia/italia-compounds.jpg');
+}
+
+.azerbaijan-compounds {
+    background-image: url('../img/Competitions/17-Azerbaijan/baku-compounds.jpg');
+}
+
+.singapore-compounds {
+    background-image: url('../img/Competitions/18-Singapore/singapore-compounds.jpg');
+}
+
+.usa-compounds {
+    background-image: url('../img/Competitions/19-USA/usa-compounds.jpg');
+}
+
+.mexico-compounds {
+    background-image: url('../img/Competitions/20-Mexico/mexico-compounds.jpg');
+}
+
+.brazil-compounds {
+    background-image: url('../img/Competitions/21-Brasil/brasil-compounds.jpg');
+}
+
+
+/******************************************************************************* STINTS IMAGES***/
+
+.bahrain-stints {
+    background-image: url('../img/Competitions/01-Bahrain/bahrain-stints.jpg');
+}
+
+.saudi-arabia-stints {
+    background-image: url('../img/Competitions/02-Saudi-Arabia/saudi-stint.jpg');
+}
+
+.australia-stints {
+    background-image: url('../img/Competitions/03-Australia/australia-stints.jpg');
+}
+
+.japan-stints {
+    background-image: url('../img/Competitions/04-Japon/japan-stints.jpg');
+}
+
+.china-stints {
+    background-image: url('../img/Competitions/05-China/china-stints.jpg');
+}
+
+.miami-stints {
+    background-image: url('../img/Competitions/06-Miami/miami-stints.jpg');
+}
+
+.imola-stints {
+    background-image: url('../img/Competitions/07-Imola/imola-stints.jpg');
+}
+
+.monaco-stints {
+    background-image: url('../img/Competitions/08-Monaco/monaco-stints.jpg');
+}
+
+.canada-stints {
+    background-image: url('../img/Competitions/09-Canada/canada-stints.jpg');
+}
+
+.spain-stints {
+    background-image: url('../img/Competitions/10-Spain/spain-stints.jpg');
+}
+
+.austria-stints {
+    background-image: url('../img/Competitions/11-Austria/austria-stints.jpg');
+}
+
+.great-britain-stints {
+    background-image: url('../img/Competitions/12-UK/uk-stints.jpg');
+}
+
+.hungary-stints {
+    background-image: url('../img/Competitions/13-Hungary/hungary-stints.jpg');
+}
+
+.belgium-stints {
+    background-image: url('../img/Competitions/14-Belgium/belgium-stints.jpg');
+}
+
+.netherlands-stints {
+    background-image: url('../img/Competitions/15-Deutchland/dutch-stints.jpg');
+}
+
+.italy-stints {
+    background-image: url('../img/Competitions/16-Italia/italia-stints.jpg');
+}
+
+.azerbaijan-stints {
+    background-image: url('../img/Competitions/17-Azerbaijan/baku-stints.jpg');
+}
+
+.singapore-stints {
+    background-image: url('../img/Competitions/18-Singapore/singapore-stints.jpg');
+}
+
+.usa-stints {
+    background-image: url('../img/Competitions/19-USA/usa-stints.jpg');
+}
+
+.mexico-stints {
+    background-image: url('../img/Competitions/20-Mexico/mexico-stints.jpg');
+}
+
+.brazil-stints {
+    background-image: url('../img/Competitions/21-Brasil/brasil-stints.jpg');
+}
+
+
+
+/******************************************************************************* MEDIA QUERIES ***/
+@media (max-width: 768px) {
+    section {
+        padding: 2rem;
+    }
+
+    section .explanation {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    section.bahrain-content,
+    section.saudi-arabia-content,
+    section.australia-content,
+    section.japan-content,
+    section.china-content,
+    section.miami-content,
+    section.imola-content,
+    section.monaco-content,
+    section.spain-content,
+    section.canada-content,
+    section.austria-content,
+    section.great-britain-content,
+    section.belgium-content,
+    section.netherlands-content,
+    section.italy-content,
+    section.singapore-content,
+    section.usa-content,
+    section.mexico-content,
+    section.brazil-content {
+        flex-flow: column nowrap;
+        gap: 1rem;
+    }
+
+    .bahrain-layout,
+    .saudi-arabia-layout,
+    .australia-layout,
+    .japan-layout,
+    .china-layout,
+    .miami-layout,
+    .imola-layout,
+    .monaco-layout,
+    .spain-layout,
+    .canada-layout,
+    .austria-layout,
+    .great-britain-layout,
+    .belgium-layout,
+    .netherlands-layout,
+    .italy-layout,
+    .singapore-layout,
+    .usa-layout,
+    .mexico-layout,
+    .brazil-layout {
+        width: 100%;
+        height: 15rem;
+    }
+
+    .bahrain-compounds,
+    .saudi-arabia-compounds,
+    .australia-compounds,
+    .japan-compounds,
+    .china-compounds,
+    .miami-compounds,
+    .imola-compounds,
+    .monaco-compounds,
+    .spain-compounds,
+    .canada-compounds,
+    .austria-compounds,
+    .great-britain-compounds,
+    .belgium-compounds,
+    .netherlands-compounds,
+    .italy-compounds,
+    .singapore-compounds,
+    .usa-compounds,
+    .mexico-compounds,
+    .brazil-compounds {
+        width: 100%;
+        height: 15rem;
+    }
+
+    .bahrain-stints,
+    .saudi-arabia-stints,
+    .australia-stints,
+    .japan-stints,
+    .china-stints,
+    .miami-stints,
+    .imola-stints,
+    .monaco-stints,
+    .spain-stints,
+    .canada-stints,
+    .austria-stints,
+    .great-britain-stints,
+    .belgium-stints,
+    .netherlands-stints,
+    .italy-stints,
+    .singapore-stints,
+    .usa-stints,
+    .mexico-stints,
+    .brazil-stints {
+        width: 100%;
+        height: 15rem;
+    }
+
+}

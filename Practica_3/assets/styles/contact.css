@@ -1,0 +1,35 @@
+.contact-intro {
+    height: 40vh;
+    background-image: url(../img/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.question {
+    height: 40vh;
+    background-color: #1d1d1d;
+    padding: 2rem;
+    text-align: center;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.question h2 {
+    font-family: "NouvellBold";
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.question p {
+    font-family: "NouvellRegular";
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+    line-height: 1.6;
+    color: #d4d4d4;
+    max-width: 60ch;
+}
