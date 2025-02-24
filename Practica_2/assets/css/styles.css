@@ -17,6 +17,7 @@ body {
 /******************************************************************************* GENERAL ***/
 section {
     height: 100vh;
+    width: 100vw;
     padding: 20px;
 }
 
@@ -91,10 +92,7 @@ nav ul li a {
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: url('../img/concert2.jpg');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
+    background: linear-gradient(135deg, #ff6f61, #ff2e63);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -117,34 +115,14 @@ nav ul li a {
     margin-top: 10px;
 }
 
-
 /******************************************************************************* ABOUT ***/
 .about {
-    background-image: url('../img/banda3.jpg');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
     position: relative;
     width: 100vw;
     height: 100vh;
     text-align: center;
     padding: 50px 0;
-}
-
-.about::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.about-header,
-.about-content,
-.about-awards {
-    position: relative;
-    z-index: 2;
 }
 
 .about-header h2 {
@@ -168,6 +146,7 @@ nav ul li a {
     line-height: 1.6;
     margin: 20px auto;
     width: 80%;
+    max-width: 75ch;
 }
 
 .about-awards {
@@ -188,36 +167,18 @@ nav ul li a {
     line-height: 1.6;
     margin: 10px auto;
     width: 80%;
+    max-width: 75ch;
 }
 
 /******************************************************************************* MEMBERS ***/
-.container-members {
-    background-image: url('../img/banda2.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.members-container {
+    background: linear-gradient(135deg, #333, #555);
     padding: 50px 0;
     text-align: center;
     min-height: 100vh;
 }
 
-.container-members::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.container-members h2,
-.members-flex {
-    position: relative;
-    z-index: 2;
-}
-
-.container-members h2 {
+.members-container h2 {
     font-family: 'Righteous', cursive;
     font-size: 2em;
     margin-bottom: 20px;
@@ -274,11 +235,6 @@ nav ul li a {
     height: 100vh;
 }
 
-.container-tours {
-    width: 80%;
-    margin: 0 auto;
-}
-
 .tours-header h2 {
     font-family: 'Righteous', cursive;
     font-size: 2.5em;
@@ -321,29 +277,10 @@ nav ul li a {
 
 /******************************************************************************* ALBUM ***/
 .works {
-    background-image: url('../img/last_album.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background: linear-gradient(135deg, #ff6f61, #ff2e63);
     padding: 50px 0;
     text-align: center;
     min-height: 100vh;
-}
-
-.works::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.works-header,
-.works-body {
-    position: relative;
-    z-index: 2;
 }
 
 .works-header h4,
@@ -383,10 +320,33 @@ nav ul li a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.audio-section {
+    margin-top: 40px;
+}
+
+.audio-section h3 {
+    font-family: 'Righteous', cursive;
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.audio-player {
+    margin: 20px 0;
+}
+
+.audio-player p {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
 /******************************************************************************* CONTACT ***/
 .contact {
     width: 100%;
     height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
 .contact-container {
@@ -477,12 +437,32 @@ footer {
     text-align: center;
 }
 
-footer .logofooter {
-    background-image: url(../img/sum41_logo4.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 10px;
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 /******************************************************************************* MEDIA QUERIES ***/
