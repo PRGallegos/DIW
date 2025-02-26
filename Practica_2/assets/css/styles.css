@@ -21,7 +21,7 @@ h4 {
     font-family: 'Righteous', cursive;
 }
 
-/* Estilos generales de secciones */
+/******************************************************************************* SECTION STYLES ***/
 section {
     height: 100vh;
     padding: 20px;
@@ -31,7 +31,7 @@ section {
     text-align: center;
 }
 
-/* Navbar */
+/******************************************************************************* NAV ***/
 nav {
     background: #222;
     color: #fff;
@@ -72,7 +72,7 @@ nav ul li a {
     margin: 5px 0;
 }
 
-/* Hero Section */
+/******************************************************************************* HERO ***/
 .hero {
     background: linear-gradient(135deg, #ff6f61, #ff2e63);
     color: #fff;
@@ -91,7 +91,7 @@ nav ul li a {
     margin-top: 10px;
 }
 
-/* About Section */
+/******************************************************************************* ABOUT ***/
 .about {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: #fff;
@@ -114,7 +114,7 @@ nav ul li a {
     margin: 20px auto;
 }
 
-/* Members Section */
+/******************************************************************************* MEMBERS ***/
 .members-container {
     background: linear-gradient(135deg, #333, #555);
     color: #fff;
@@ -143,7 +143,7 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-/* Tours Section */
+/******************************************************************************* TOURS ***/
 .tours {
     background: #f4f4f4;
     color: #222;
@@ -170,7 +170,7 @@ nav ul li a {
     transform: scale(1.05);
 }
 
-/* Albums Section */
+/******************************************************************************* ALBUMS ***/
 .works {
     background: linear-gradient(135deg, #ff6f61, #ff2e63);
     color: #fff;
@@ -206,7 +206,7 @@ nav ul li a {
     border-radius: 10px;
 }
 
-/* Contact Section */
+/******************************************************************************* CONTACT ***/
 .contact {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: #fff;
@@ -261,7 +261,7 @@ footer {
     font-size: 1.5em;
 }
 
-/* Media Queries */
+/******************************************************************************* MEDIA QUERIES ***/
 @media (max-width: 768px) {
     #menu-toggle {
         display: block;
