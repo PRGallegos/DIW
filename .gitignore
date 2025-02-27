@@ -1,0 +1,30 @@
+# Ignorar archivos grandes
+Practica_1/*.pdf
+Practica_1/*.zip
+Practica_1/*.ai
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de logs y caché
+*.log
+*.tmp
+*.cache
+
+# Ignorar archivos de compilación o binarios
+*.exe
+*.out
+*.o
+*.obj
+
+# Ignorar archivos de dependencias (si aplican)
+node_modules/
+vendor/
+
+# Ignorar archivos de Git y editor de código
+.git/
+*.swp
+*.swo
+.vscode/
+.idea/
