@@ -28,3 +28,6 @@ vendor/
 *.swo
 .vscode/
 .idea/
+Practica_1/*.pdf
+Practica_1/*.zip
+Practica_1/*.ai
