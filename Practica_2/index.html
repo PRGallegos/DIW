@@ -4,94 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sum 41 Fan Web</title>
+    <meta name="description"
+        content="Official Sum 41 Fan Website - Discover the band, their music, tour dates, and more">
+    <title>Sum 41 | Official Fan Website</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 
 <body>
+    <!-- Main container -->
     <div class="container">
+        <!-- Header with navigation -->
         <header>
             <nav id="nav" class="nav">
-                <div class="logo"> </div>
-                <button id="menu-toggle" aria-label="Toggle navigation">
+                <div class="logo">
+                    <!-- Logo placeholder with text fallback -->
+                    <a href="#" aria-label="Sum 41 Home">
+                        <img src="assets/img/sum41_logo.png" alt="Sum 41 Logo" loading="lazy">
+                        <span>SUM 41</span>
+                    </a>
+                </div>
+                <!-- Mobile menu toggle button -->
+                <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span><span></span><span></span>
                 </button>
+                <!-- Navigation menu -->
                 <ul id="menu-list">
                     <li><a href="#about">About</a></li>
+                    <li><a href="#members">Members</a></li>
+                    <li><a href="#tours">Tour Dates</a></li>
                     <li><a href="#discography">Discography</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
-            <!-- Hero Section -->
+            <!-- Hero Section - Main visual impact area -->
             <section id="about" class="hero">
                 <div class="slider">
+                    <!-- Hero background with gradient overlay for text readability -->
+                    <div class="hero-background" aria-hidden="true"></div>
                     <div class="legend">
-                        <div class="little">Punk Rock Legends</div>
-                        <div class="great">The underclass heroes</div>
+                        <div class="little">Punk Rock Legends Since 1996</div>
+                        <div class="great">The Underclass Heroes</div>
+                        <p class="hero-description">Experience the raw energy and iconic sound that defined a generation
+                        </p>
+                        <a href="#tours" class="cta-button">See Tour Dates</a>
                     </div>
                 </div>
             </section>
 
-            <!-- Band Bio Section -->
+            <!-- Band Bio Section - About the band history and achievements -->
             <section class="about" id="bio">
-                <div class="about-container">
-                    <div class="about-header">
+                <div class="about-container content-wrapper">
+                    <div class="about-header section-header">
+                        <span class="section-subtitle">Our Story</span>
                         <h2>We Are Punk</h2>
                     </div>
                     <div class="separator"></div>
                     <div class="about-content">
-                        <p>
-                            Sum 41 is a Canadian rock band formed in 1996 in Ajax, Ontario. The current lineup includes
-                            Deryck Whibley (vocals and guitar), Dave Baksh (guitar), Jason McCaslin (bass), Tom Thacker
-                            (guitar and keyboards), and Frank Zummo (drums). They have sold over 10 million albums, with
-                            hits like All Killer No Filler (2001) and their single "Fat Lip," which reached number one
-                            on the Billboard chart. Throughout their career, they have released eight albums and
-                            received several nominations and awards, standing out in the rock scene with tracks like
-                            "Blood in My Eyes."
-                        </p>
+                        <div class="about-image">
+                            <img src="assets/images/band-photo.jpg" alt="Sum 41 band members" loading="lazy">
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                Sum 41 is a Canadian rock band formed in 1996 in Ajax, Ontario. The current lineup
+                                includes
+                                Deryck Whibley (vocals and guitar), Dave Baksh (guitar), Jason McCaslin (bass), Tom
+                                Thacker
+                                (guitar and keyboards), and Frank Zummo (drums).
+                            </p>
+                            <p>
+                                They have sold over 10 million albums, with hits like <em>All Killer No Filler</em>
+                                (2001) and their single "Fat Lip,"
+                                which reached number one on the Billboard chart. Throughout their career, they have
+                                released
+                                eight albums and received several nominations and awards, standing out in the rock scene
+                                with
+                                tracks like "Blood in My Eyes."
+                            </p>
+                        </div>
                     </div>
+                    <!-- Awards and Recognition Section -->
                     <div class="about-awards">
-                        <h3>Awards</h3>
-                        <h4>Juno Awards (Canada)</h4>
-                        <p>2003: Won the award for Group of the Year. 2005: Won the award for Rock Album of the Year for
-                            Chuck.</p>
-                        <h4>Kerrang! Awards (United Kingdom)</h4>
-                        <p>2002: Won the award for Best Live Band. 2004: Won the award for Best International Artist.
-                        </p>
-                        <h4>Alternative Press Music Awards (United States)</h4>
-                        <p>2017: Won the award for Comeback Album of the Year for 13 Voices.</p>
-                        <h4>Nominations</h4>
-                        <p>Grammy Awards: Nominated for Best Hard Rock/Metal Performance for the song "Blood in My Eyes"
-                            in 2012.</p>
-                        <h4>MTV Video Music Awards (VMA)</h4>
-                        <p>Received multiple nominations, including Best Rock Video and Best International Video for
-                            their popular singles.</p>
-                        <h4>MuchMusic Video Awards (Canada)</h4>
-                        <p>Received numerous nominations in various categories over the years, such as Best Group Video
-                            and Viewer's Choice Favorite Video.</p>
+                        <h3>Awards & Recognition</h3>
+                        <div class="awards-grid">
+                            <div class="award-item">
+                                <h4>Juno Awards (Canada)</h4>
+                                <ul>
+                                    <li>2003: Group of the Year</li>
+                                    <li>2005: Rock Album of the Year for <em>Chuck</em></li>
+                                </ul>
+                            </div>
+                            <div class="award-item">
+                                <h4>Kerrang! Awards (UK)</h4>
+                                <ul>
+                                    <li>2002: Best Live Band</li>
+                                    <li>2004: Best International Artist</li>
+                                </ul>
+                            </div>
+                            <div class="award-item">
+                                <h4>Alternative Press Music Awards</h4>
+                                <ul>
+                                    <li>2017: Comeback Album of the Year for <em>13 Voices</em></li>
+                                </ul>
+                            </div>
+                            <div class="award-item">
+                                <h4>Grammy Nominations</h4>
+                                <ul>
+                                    <li>2012: Best Hard Rock/Metal Performance for "Blood in My Eyes"</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Our Members Subsection -->
-                <div class="members-container" id="members">
-                    <h2>Our Members</h2>
-                    <div class="members-flex">
+            </section>
+
+            <!-- Members Section -->
+            <section id="members" class="members">
+                <div class="container">
+                    <h2>Miembros</h2>
+                    <div class="members-grid">
+                        <!-- Deryck Whibley -->
                         <div class="member">
-                            <div class="member-photo member1" aria-label="Deryck Whibley"></div>
-                            <h4>Deryck Whibley</h4>
+                            <div class="member-photo">
+                                <img src="assets/img/1x/Member1.png" alt="Deryck Whibley" loading="lazy">
+                            </div>
+                            <div class="member-info">
+                                <h3>Deryck Whibley</h3>
+                                <p>Voz principal y guitarra</p>
+                            </div>
                         </div>
+
+                        <!-- Dave Baksh -->
                         <div class="member">
-                            <div class="member-photo member2" aria-label="Dave Baksh"></div>
-                            <h4>Dave Baksh</h4>
+                            <div class="member-photo">
+                                <img src="assets/img/1x/Member2.png" alt="Dave Baksh" loading="lazy">
+                            </div>
+                            <div class="member-info">
+                                <h3>Dave Baksh</h3>
+                                <p>Guitarra y coros</p>
+                            </div>
                         </div>
+
+                        <!-- Jason McCaslin -->
                         <div class="member">
-                            <div class="member-photo member3" aria-label="Jason McCaslin"></div>
-                            <h4>Jason McCaslin</h4>
+                            <div class="member-photo">
+                                <img src="assets/img/1x/Member3.png" alt="Jason McCaslin" loading="lazy">
+                            </div>
+                            <div class="member-info">
+                                <h3>Jason McCaslin</h3>
+                                <p>Bajo y coros</p>
+                            </div>
                         </div>
+
+                        <!-- Tom Thacker -->
                         <div class="member">
-                            <div class="member-photo member4" aria-label="Frank Zummo"></div>
-                            <h4>Frank Zummo</h4>
+                            <div class="member-photo">
+                                <img src="assets/img/1x/Member4.png" alt="Tom Thacker" loading="lazy">
+                            </div>
+                            <div class="member-info">
+                                <h3>Tom Thacker</h3>
+                                <p>Guitarra y teclados</p>
+                            </div>
+                        </div>
+
+                        <!-- Frank Zummo -->
+                        <div class="member">
+                            <div class="member-photo">
+                                <img src="assets/img/1x/Member5.jpg" alt="Frank Zummo" loading="lazy">
+                            </div>
+                            <div class="member-info">
+                                <h3>Frank Zummo</h3>
+                                <p>Batería</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,110 +200,47 @@
                                 <p>Monterrey, Mexico - Festival Pa’l Norte</p>
                             </div>
                         </li>
-                        <li class="tour-card">
-                            <div class="tour-info">
-                                <h3>Apr 19</h3>
-                                <p>Omaha, NE - The Astro</p>
-                            </div>
-                        </li>
-                        <li class="tour-card">
-                            <div class="tour-info">
-                                <h3>May 6</h3>
-                                <p>New York, NY - Brooklyn Paramount</p>
-                            </div>
-                        </li>
+                        <!-- Repeat for other tour dates -->
                     </ul>
                 </div>
             </section>
 
             <!-- Albums Section -->
-            <section class="works" id="album">
-                <div class="works-container">
-                    <div class="works-header">
-                        <div class="section-name">
-                            <h4>Our Discography</h4>
-                            <h1>Latest Albums</h1>
-                        </div>
+            <section class="discography" id="discography">
+                <div class="discography-container">
+                    <div class="discography-header">
+                        <h2>Our Discography</h2>
                     </div>
-                    <div class="works-body">
-                        <div class="workizda">All Killer No Filler</div>
-                        <div class="workdcha">13 Voices</div>
-                    </div>
-                    <!-- Audio Section -->
-                    <div class="audio-section">
-                        <h3>Listen to Our Latest Hits</h3>
-                        <div class="audio-grid">
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song1.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 1 - "Underclass Hero"</p>
-                            </div>
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song2.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 2 - "Still Waiting"</p>
-                            </div>
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song3.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 3 - "Fat Lip"</p>
-                            </div>
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song4.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 4 - "In Too Deep"</p>
-                            </div>
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song5.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 5 - "Walking Disaster"</p>
-                            </div>
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song6.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 6 - "The Hell Song"</p>
-                            </div>
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song7.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 7 - "Pieces"</p>
-                            </div>
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song8.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 8 - "With Me"</p>
-                            </div>
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song9.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 9 - "Blood in My Eyes"</p>
-                            </div>
-                            <div class="audio-player">
-                                <audio controls>
-                                    <source src="assets/audio/song10.mp3" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <p>Song 10 - "Fake My Own Death"</p>
-                            </div>
+                    <div class="discography-grid">
+                        <div class="album">
+                            <img src="assets/images/albums/all-killer-no-filler.jpg"
+                                alt="All Killer No Filler Album Cover" loading="lazy">
+                            <h3>All Killer No Filler</h3>
+                            <p>2001</p>
                         </div>
+                        <div class="album">
+                            <img src="assets/images/albums/13-voices.jpg" alt="13 Voices Album Cover" loading="lazy">
+                            <h3>13 Voices</h3>
+                            <p>2016</p>
+                        </div>
+                        <!-- Repeat for other albums -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Audio Section -->
+            <section class="audio-section">
+                <div class="audio-container">
+                    <h2>Listen to Our Latest Hits</h2>
+                    <div class="audio-grid">
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="assets/audio/song1.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <p>Song 1 - "Underclass Hero"</p>
+                        </div>
+                        <!-- Repeat for other songs -->
                     </div>
                 </div>
             </section>
@@ -222,18 +249,15 @@
             <section class="contact" id="contact">
                 <div class="contact-container">
                     <div class="contact-header">
-                        <div class="section-name">
-                            <h4>Find us</h4>
-                            <h1>Contact Us</h1>
-                        </div>
+                        <h2>Contact Us</h2>
                     </div>
                     <div class="contact-body">
-                        <div class="line">
-                            <span>C/ 1234 Rock Street, Ajax, Ontario, Canada</span>
-                            <span>+1 (555) 123-4567</span>
-                            <span>info@sum41official.com</span>
+                        <div class="contact-info">
+                            <p>C/ 1234 Rock Street, Ajax, Ontario, Canada</p>
+                            <p>+1 (555) 123-4567</p>
+                            <p>info@sum41official.com</p>
                         </div>
-                        <form class="mt50">
+                        <form class="contact-form">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Name" required>
                             <label for="email">Email</label>
@@ -241,18 +265,20 @@
                             <label for="subject">Subject</label>
                             <input type="text" id="subject" name="subject" placeholder="Subject" required>
                             <label for="message">Your questions...</label>
-                            <div class="messagetext">
-                                <textarea id="message" placeholder="Message" required></textarea>
-                            </div>
+                            <textarea id="message" placeholder="Message" required></textarea>
                             <input type="submit" value="Submit" aria-label="Submit form">
                         </form>
                     </div>
                 </div>
             </section>
         </main>
+
+        <!-- Footer -->
         <footer>
             <div class="footer-content">
-                <div class="logofooter"></div>
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="Sum 41 Logo" loading="lazy">
+                </div>
                 <div class="footer-links">
                     <a href="#about">About</a>
                     <a href="#discography">Discography</a>
