@@ -1,3 +1,4 @@
+/******************************************************************************* INTRO ***/
 .contact-intro {
     height: 40vh;
     background-image: url(../img/contact.jpg);
@@ -11,7 +12,6 @@
     background-color: #1d1d1d;
     padding: 2rem;
     text-align: center;
-
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;

@@ -42,7 +42,6 @@ section .explanation p {
 
 section .race {
     width: 100%;
-
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -101,7 +100,6 @@ section .brazil-content {
 .brazil-layout {
     width: 100%;
     height: 40rem;
-
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -130,7 +128,6 @@ section .brazil-content {
 .brazil-compounds {
     width: 100%;
     height: 40rem;
-
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,13 +156,11 @@ section .brazil-content {
 .brazil-stints {
     width: 100%;
     height: 40rem;
-
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 0.5rem;
 }
-
 
 /******************************************************************************* LAYOUT IMAGES ***/
 .bahrain-layout {
@@ -252,7 +247,6 @@ section .brazil-content {
     background-image: url('../img/Competitions/21-Brasil/brasil-layout.jpg');
 }
 
-
 /******************************************************************************* COMPOUNDS IMAGES ***/
 .bahrain-compounds {
     background-image: url('../img/Competitions/01-Bahrain/bahrain-compounds.jpg');
@@ -338,9 +332,7 @@ section .brazil-content {
     background-image: url('../img/Competitions/21-Brasil/brasil-compounds.jpg');
 }
 
-
-/******************************************************************************* STINTS IMAGES***/
-
+/******************************************************************************* STINTS IMAGES ***/
 .bahrain-stints {
     background-image: url('../img/Competitions/01-Bahrain/bahrain-stints.jpg');
 }
@@ -424,8 +416,6 @@ section .brazil-content {
 .brazil-stints {
     background-image: url('../img/Competitions/21-Brasil/brasil-stints.jpg');
 }
-
-
 
 /******************************************************************************* MEDIA QUERIES ***/
 @media (max-width: 768px) {
@@ -529,5 +519,4 @@ section .brazil-content {
         width: 100%;
         height: 15rem;
     }
-
 }

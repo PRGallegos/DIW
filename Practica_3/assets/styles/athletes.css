@@ -161,7 +161,6 @@
     background-image: url('../img/drivers/alex-albon.jpg');
 }
 
-
 /******************************************************************************* CHAMPIONS ***/
 .world-champions {
     padding: 4rem 2rem;
@@ -253,7 +252,6 @@
         flex-direction: column;
         width: 100%;
     }
-
 
     .driver-photo {
         height: 40vh;
