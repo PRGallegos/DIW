@@ -18,9 +18,8 @@ body {
     width: 100%;
 }
 
-/******************************************************************************* GENERAL */
 .container {
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -42,8 +41,6 @@ header {
     padding: 20px 0;
     width: 100%;
 }
-
-/******************************************************************************* NAV */
 
 .nav {
     display: flex;
@@ -94,8 +91,6 @@ header {
 #menu-list a:hover {
     color: #ff6f61;
 }
-
-/******************************************************************************* HERO ***/
 
 .hero {
     position: relative;
@@ -158,8 +153,6 @@ header {
     background-color: #e65a50;
 }
 
-/******************************************************************************* ABOUT */
-
 .about {
     padding: 60px 20px;
     background-color: #fff;
@@ -220,8 +213,6 @@ header {
     margin-top: 40px;
     text-align: center;
 }
-
-/******************************************************************************* AWARDS */
 
 .awards-grid {
     display: grid;
@@ -312,10 +303,6 @@ header {
     margin: 0;
 }
 
-@media (max-width: 768px) {}
-
-/******************************************************************************* TOURS */
-
 .tours {
     padding: 60px 20px;
     background-color: #fff;
@@ -352,8 +339,6 @@ header {
     color: #666;
 }
 
-/******************************************************************************* DISCOGRAPHY */
-
 .discography {
     padding: 60px 20px;
     background-color: #f4f4f4;
@@ -372,8 +357,6 @@ header {
     gap: 20px;
     margin-top: 30px;
 }
-
-/******************************************************************************* ALBUMS */
 
 .album {
     background-color: #fff;
@@ -395,8 +378,6 @@ header {
     font-size: 1rem;
     color: #666;
 }
-
-/******************************************************************************* AUDIO */
 
 .audio-section {
     padding: 60px 20px;
@@ -429,7 +410,6 @@ header {
     margin-top: 10px;
 }
 
-/******************************************************************************* CONTACT */
 .contact {
     padding: 60px 20px;
     background-color: #f4f4f4;
@@ -490,7 +470,6 @@ header {
     background-color: #e65a50;
 }
 
-/******************************************************************************* FOOTER */
 footer {
     background-color: #222;
     color: #fff;
@@ -542,9 +521,6 @@ footer p {
     margin-top: 20px;
     font-size: 0.9rem;
 }
-
-
-/******************************************************************************* RESPONSIVE ***/
 
 @media (max-width: 768px) {
     #menu-toggle {
