@@ -17,7 +17,7 @@ Creación de un sitio web responsive para la banda de música Sum 41, con seccio
 ### Práctica 3 - Deportes de Riesgo (Fórmula 1)
 Estado: En desarrollo
 
-Desarrollo de una plataforma web sobre Fórmula 1, con información detallada de equipos, pilotos, circuitos y calendario de la temporada, implementada con frameworks CSS.
+Desarrollo de una plataforma web sobre Fórmula 1, con información detallada de equipos, pilotos, circuitos y calendario de la temporada.
 
 ### Práctica 4 - Restaurante Michelin
 Estado: En desarrollo
@@ -27,7 +27,7 @@ Diseño de la interfaz web para un restaurante con estrella Michelin, incluyendo
 ### Práctica 5 - Agencia de Viajes
 Estado: Pendiente
 
-Implementación de una web completa para una agencia de viajes con buscador de destinos, ofertas especiales, blog de viajes y sistema de reservas online.
+Implementación de una web completa para una agencia de viajes con buscador de destinos, blog de viajes y sistema de reservas online.
 
 # Autor
 Pedro Rodríguez Gallegos
