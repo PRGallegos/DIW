@@ -7,14 +7,27 @@
 html {
     scroll-behavior: smooth;
 }
-
+/******************************************************************************* BODY ***/
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
     width: 100%;
     overflow-x: hidden;
+}
+
+.full-height {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .container {
@@ -29,6 +42,9 @@ header {
     color: #fff;
     padding: 20px 0;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav {
@@ -59,11 +75,13 @@ header {
     cursor: pointer;
 }
 
+#menu-toggle.active + #menu-list {
+    display: flex;
+}
+
 #menu-list {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 #menu-list li {
@@ -75,11 +93,14 @@ header {
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
+section {
+    height: 100vh;
+}
 #menu-list a:hover {
     color: #ff6f61;
 }
 
+/******************************************************************************* HERO ***/
 .hero {
     height: 100vh;
     background: url('../img/banda.jpg') no-repeat center center/cover;
@@ -89,21 +110,42 @@ header {
     justify-content: center;
     text-align: center;
     width: 100%;
+    position: relative;
 }
 
-.hero-content {
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+
+.legend {
+    position: relative;
+    z-index: 2;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
-.hero h1 {
-    font-size: 4rem;
+.little {
+    font-size: 1.2rem;
+    text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-.tagline {
-    font-size: 1.5rem;
+.great {
+    font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .cta-button {
@@ -120,6 +162,7 @@ header {
     background-color: #e65a50;
 }
 
+/******************************************************************************* ABOUT ***/
 .about {
     padding: 60px 20px;
     background-color: #fff;
@@ -131,16 +174,38 @@ header {
     margin: 0 auto;
 }
 
-.about h2 {
+.about-header {
     text-align: center;
-    font-size: 2.5rem;
     margin-bottom: 30px;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #ff6f61;
+    text-transform: uppercase;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.separator {
+    width: 50px;
+    height: 2px;
+    background-color: #ff6f61;
+    margin: 20px auto;
 }
 
 .about-content {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 .about-text {
@@ -151,15 +216,6 @@ header {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 20px;
-}
-
-.about-image {
-    flex: 1;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 10px;
 }
 
 .awards {
@@ -199,6 +255,7 @@ header {
     margin-bottom: 5px;
 }
 
+/******************************************************************************* MEMBERS ***/
 .members {
     padding: 60px 20px;
     background-color: #f4f4f4;
@@ -238,17 +295,22 @@ header {
     border-bottom: 3px solid #ff6f61;
 }
 
-.member h3 {
+.member-info {
+    padding: 20px;
+}
+
+.member-info h3 {
     font-size: 1.5rem;
     margin: 20px 0 10px;
 }
 
-.member p {
+.member-info p {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
 }
 
+/******************************************************************************* TOURS ***/
 .tours {
     padding: 60px 20px;
     background-color: #fff;
@@ -263,7 +325,7 @@ header {
 
 .tour-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -286,22 +348,42 @@ header {
     margin-bottom: 20px;
 }
 
-.discography {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
+.tour-card iframe {
     width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
 }
 
-.discography h2 {
+/******************************************************************************* DISCOGRAPHY ***/
+.discography {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.discography-container {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
+}
+
+.discography-header h2 {
     font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.discography-header p {
+    font-size: 1.1rem;
+    color: #666;
     margin-bottom: 40px;
 }
 
 .discography-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
 }
 
 .album {
@@ -310,33 +392,62 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 100%;
 }
 
 .album img {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .album h3 {
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .album p {
     font-size: 1rem;
     color: #666;
+    margin-bottom: 15px;
 }
 
+.album-details {
+    text-align: left;
+}
+
+.album-details h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.album-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.album-details li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.audio-player {
+    margin-top: 15px;
+}
+
+.audio-player p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/******************************************************************************* CONTACT ***/
 .contact {
     padding: 60px 20px;
-    background-color: #fff;
+    background-color: #f4f4f4;
     width: 100%;
-}
-
-.contact h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
 }
 
 .contact-container {
@@ -395,6 +506,7 @@ header {
     background-color: #e65a50;
 }
 
+/******************************************************************************* FOOTER ***/
 footer {
     background-color: #222;
     color: #fff;
@@ -414,6 +526,7 @@ footer {
     color: #ff6f61;
 }
 
+/******************************************************************************* RESPONSIVE ***/
 @media (max-width: 768px) {
     #menu-toggle {
         display: block;
